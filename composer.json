@@ -1,0 +1,7 @@
+{
+    "name": "Knawat/Knawat-PHP-SDK",
+    "description": "Knawat-PHP-SDK is used in open source platforms to connect ecommerce store with knawat",
+    "require": {
+         "php": ">=5.3.0"
+    }
+}
