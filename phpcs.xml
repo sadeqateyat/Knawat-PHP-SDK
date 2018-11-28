@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="Knawat REST API - PHP Library">
+    <description>The coding standard for Knawat REST API - PHP Library.</description>
+
+    <file>src</file>
+    <rule ref="PSR2" />
+</ruleset>
