@@ -1,5 +1,9 @@
+<p align="center"><a href="https://knawat.com/"><img src="https://knawat.com/wp-content/uploads/2017/10/253_77.png" alt="Knawat"></a></p>
+
+[![Join the chat at https://gitter.im/Knawat/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Knawat/Lobby)
+
 # Knawat-PHP-SDK
-A PHP wrapper for the Knawat REST API. Easily interact with the Knawat REST API using this library.
+A PHP wrapper for the Knawat Dropshipping REST API. Easily interact with the Knawat Dropshipping REST API using this library.
 
 ## Installation
 
@@ -9,11 +13,11 @@ composer require knawat/knawat-php-sdk
 
 ## Getting started
 
-Check out the Knawat REST API endpoints and data that can be manipulated in <https://mp.knawat.io/>.
+Check out the Knawat Dropshipping REST API endpoints and data that can be manipulated in <https://mp.knawat.io/>.
 
 ## Setup
 
-Setup for the new Knawat REST API integration:
+Setup for the new Knawat Dropshipping REST API integration:
 
 ```php
 require __DIR__ . '/vendor/autoload.php';
@@ -22,7 +26,7 @@ use Knawat\MP;
 
 $mp = new MP(
     'consumer_key_XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    'consumer__XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    'consumer_secret_XXXXXXXXXXXXXXXXXXXXXXXX'
 );
 ```
 
@@ -125,3 +129,20 @@ $mp->put($endpoint, $data)
 ```php
 $mp->delete($endpoint)
 ```
+
+## Reporting Security Issues
+To disclose a security issue to our team, [please submit a report here](https://knawat.com/contact/).
+
+## Support & Chat
+Developers are welcome here, please create issue or [chat with us https://gitter.im/Knawat/Lobby](https://gitter.im/Knawat/Lobby). This repository is not suitable for Knawat customers support. Please don't use our issue tracker for support requests, but for Knawat Dropshipping PHP SDK issues only. Support can take place through [Knawat support portal](https://help.knawat.com/hc/en-us/requests/new/) which is available for free.
+
+Support requests in issues on this repository will be closed on sight.
+
+## Contributing to Knawat
+If you have a patch or have stumbled upon an issue with Knawat PHP SDK, you can contribute this back to the code. Please create a pull request.
+
+## Check also
+* [Knawat RESTful API](https://mp.knawat.io)
+* [WooCommerce Dropshipping Plugin](https://github.com/Knawat/dropshipping-woocommerce)
+* [Magento 2 Module](https://github.com/Knawat/knawat-dropshipping-magento2)
+* [OpenCart Module](https://github.com/Knawat/knawat-dropshipping-opencart)
