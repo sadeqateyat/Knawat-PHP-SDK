@@ -258,7 +258,7 @@ class HttpClient
         curl_setopt($this->ch, CURLOPT_CUSTOMREQUEST, $request_type);
 
         // Prepare to post the data
-        if (is_array($data) && !empty($data)) {
+        if (is_object($data) || is_array($data)) {
             $data = json_encode($data);
             curl_setopt($this->ch, CURLOPT_POSTFIELDS, $data);
         }
