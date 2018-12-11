@@ -70,7 +70,7 @@ class HttpClient
         $default_options = array(
             'verify_ssl' => false,
             'timeout'    => 30,
-            'user_agent' => 'Knawat-PHP-SDK- V1.0.0'
+            'user_agent' => 'Knawat-PHP-SDK- V1.0.1'
         );
         $this->options = array_merge($default_options, $options);
         // Setup Access Token
