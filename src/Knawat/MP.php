@@ -57,7 +57,7 @@ class MP
      * @param string $last_update UTC Timestamp
      * @return object Knawat Products
      */
-    public function getProducts($limit = 25, $page = 1, $last_update = '',$sort_field = '',$sort_order = '')
+    public function getProducts($limit = 25, $page = 1, $last_update = '', $sort_field = '', $sort_order = '')
     {
         $path = '/catalog/products?limit='.$limit.'&page='.$page;
         if (!empty($last_update)) {
