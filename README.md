@@ -52,7 +52,7 @@ $mp->getProducts($limit, $page, $lastupdate);
 
 ### getProductBySku (GET Product By SKU)
 ```php
-$mp->getProducts($sku);
+$mp->getProductBySku($sku);
 ```
 |    Params  |   Type    |                        Description                         |
 | ---------- | --------  | ---------------------------------------------------------- |
