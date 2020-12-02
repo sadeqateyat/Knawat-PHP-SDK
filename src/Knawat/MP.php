@@ -57,11 +57,14 @@ class MP
      * @param string $last_update UTC Timestamp
      * @return object Knawat Products
      */
-    public function getProducts($limit = 25, $page = 1, $last_update = '')
+    public function getProducts($limit = 25, $page = 1, $last_update = '', $args = array())
     {
         $path = '/catalog/products?limit='.$limit.'&page='.$page;
         if (!empty($last_update)) {
             $path .= '&lastupdate='.$last_update;
+        }
+        if (!empty($args)){
+            $path .= '&'.http_build_query($args, '', '&');
         }
         return $this->client->get($path);
     }
