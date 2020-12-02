@@ -63,7 +63,7 @@ class MP
         if (!empty($last_update)) {
             $path .= '&lastupdate='.$last_update;
         }
-        if(!empty($args)){
+        if (!empty($args)){
             $path .= '&'.http_build_query($args, '', '&');
         }
         return $this->client->get($path);
