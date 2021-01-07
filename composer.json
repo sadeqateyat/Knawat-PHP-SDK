@@ -1,5 +1,6 @@
 {
     "name": "knawat/knawat-php-sdk",
+    "version": "1.0.1",
     "description": "A PHP wrapper for the Knawat REST API",
     "type": "library",
     "license": "Apache-2.0",
