@@ -42,13 +42,14 @@ $mp = new MP(
 
 ### getProducts (GET Products)
 ```php
-$mp->getProducts($limit, $page, $lastupdate);
+$mp->getProducts($limit, $page, $lastupdate, $args);
 ```
 |    Params    |   Type     |                        Description                         |
 | ------------ | ---------  | ---------------------------------------------------------- |
 | `limit`      | `Integer`  | Number of products to retrieve. `Default: 25`              |
 | `page`       | `Integer`  | Number of the page to retrieve. `Default: 1`               |
 | `lastupdate` | `TimeStamp` | Optional. UTC Timestamp of last import. for get only updated products after this Timestamp |
+| `args`       | `array`    | Optional. More params that you want to pass to API. [More info](https://docs.knawat.io/#tag/My-Products/paths/~1catalog~1products/get) |
 
 ### getProductBySku (GET Product By SKU)
 ```php

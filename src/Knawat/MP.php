@@ -25,7 +25,7 @@ class MP
      * Contain Knawat API URL
      * @access private
      */
-    private $api_url = 'https://mp.knawat.io/api';
+    private $api_url = 'https://mp.knawat.io/api/';
 
     /**
      * Initialize Knawat MP API.
